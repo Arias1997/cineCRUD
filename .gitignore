@@ -1,0 +1,22 @@
+# Credenciales y configuración local
+/config/database.local.php
+/.env
+/.env.*
+!/.env.example
+
+# Portadas cargadas por la aplicación
+/public/uploads/*
+!/public/uploads/.gitkeep
+
+# Respaldos o exportaciones de la base de datos
+/database/dumps/
+*_dump.sql
+*_backup.sql
+
+# Archivos generados y configuración del editor
+/vendor/
+*.log
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini

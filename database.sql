@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS cine
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_unicode_ci;
+
+USE cine;
+
+CREATE TABLE IF NOT EXISTS pelicula (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(100) NOT NULL,
+    genero VARCHAR(100) NOT NULL,
+    duracion INT UNSIGNED NOT NULL,
+    imagenportada VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+) ENGINE=InnoDB
+  DEFAULT CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
